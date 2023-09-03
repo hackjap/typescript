@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "allowJs": true, // 자바스크립트 파일을 허용 할 것인지
+    "target": "ES6",  // tsc(typescript compiler)가 ES6로 컴파일
+    "outDir": "./dist", // 컴파일된 파일을 저장할 디렉토리
+    "moduleResolution": "Node", // 모듈을 어떻게 해석할 것인지
+    "lib": ["ES2015", "DOM","DOM.Iterable"],// 컴파일에 필요한 라이브러리
+    "noImplicitAny": true,
+    "typeRoots": ["./node_modules/@types","types"], // 타입스크립트 타입 정의 파일이 있는 경로
+    "strict": true, // 엄격한 타입 체크
+    "strictFunctionTypes": false // 함수 타입 체크
+  },
+  "include": ["./src/**/*"] // 컴파일 할 파일들의 경로
+}
